@@ -8,15 +8,15 @@ def gravitational_law(m1, m2, r, g=10):
 
 
 def main():
-    m1 = float(input("m1: "))
-    m2 = float(input("m2: "))
-    r = float(input("r : "))
     try:
+        m1 = float(input("m1: "))
+        m2 = float(input("m2: "))
+        r = float(input("r : "))
         print(f"Force = {gravitational_law(m1, m2, r)}N")
-    except ZeroDivisionError as error:
-        print("Handling runtime error:", error)
+    except ZeroDivisionError as err:
+        print(f"Handling runtime error:", err)
     except ValueError as val:
-        print("Could not convert data to integer", val)
+        print("Oops! is not valid number: ", val)
     return os.EX_OK
 
 
