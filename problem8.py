@@ -15,6 +15,8 @@ def main():
         print(f"Force = {gravitational_law(m1, m2, r)}N")
     except ZeroDivisionError as error:
         print("Handling runtime error:", error)
+    except ValueError as val:
+        print("Could not convert data to integer", val)
     return os.EX_OK
 
 
