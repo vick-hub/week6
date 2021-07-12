@@ -2,13 +2,19 @@ import os
 import sys
 import math
 
-
+"""
+Notes:
+- Good attempt!
+- Make the functions for equations of motion return the value they calculate
+- 
+"""
 def equations_of_motion(vo, a, t):
     v = float(vo + (a * t))
     print(v)
 
 
 def equations_of_motion1(vo, a, ro, r):
+    # todo: docstring
     v1 = math.sqrt((vo ** 2) + (2 * a * (r - ro)))
     print(v1)
 
@@ -26,6 +32,7 @@ def main():
         a = float(input("a: "))
         t = float(input("t: "))
         if i == 1:
+            # fixme: your functions have no return so they return None
             print(f"v: {equations_of_motion(vo, a, t)}")
         else:
             ro = float(input("ro: "))

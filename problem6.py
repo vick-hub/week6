@@ -11,7 +11,7 @@ def my_func(x):
     else:
         return False
 
-
+# todo: this is bad design practice - using global variables; try not to rely on global variables
 y = int(input("Enter y: "))
 
 

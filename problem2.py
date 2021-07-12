@@ -2,7 +2,9 @@ import os
 import sys
 
 
+# fixme: can you think of a better name in line with what this function does?
 def palindrome(word):
+    # todo: add a docstring; read the class notes
     return word == word[::-1]
 
 

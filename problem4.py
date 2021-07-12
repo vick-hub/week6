@@ -4,6 +4,7 @@ import random
 
 
 def doubling():
+    # todo: docstring
     list2 = []
     for i in range(15):
         list1 = random.uniform(0, 100)
@@ -14,6 +15,7 @@ def doubling():
 
 
 def main():
+    # fixme: no need for a function
     doubling()
     return os.EX_OK
 

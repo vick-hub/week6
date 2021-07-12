@@ -2,7 +2,10 @@ import os
 import sys
 
 
+# fixme: think of a better name
 def double(text, a=2):
+    # todo: docstring
+    # very good!
     return ''.join([x * a for x in text])
 
 
